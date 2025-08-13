@@ -1,0 +1,267 @@
+@font-face{
+    font-family: Wingdings;
+    src: url(fonts/wingding.ttf);
+}
+
+@font-face{
+    font-family: Times New Roman;
+    src: url(fonts/times.ttf);
+}
+
+
+
+body {
+	overflow: hidden;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: black;
+	color: #ababab;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button{
+	margin: 0;
+	padding: 0.75vh;
+
+	background-color: transparent;
+	color: #ababab;
+
+	border: 0.5vh double #ababab;
+	border-radius: 1vh;
+
+	font-size: 2.25vh;
+	font-family: Times New Roman;
+
+	cursor: pointer;
+}
+
+button:hover{
+    color:#c9ff00;
+    border-color: #c9ff00;
+}
+
+
+
+#cadre_horizontal{
+	position: absolute;
+	z-index: -100;
+
+	width: 100vw;
+	height: 99vh;
+
+	margin-top: 0.5vh;
+	margin-bottom: 0.5vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: Wingdings;
+	font-size: 1.35vw;
+}
+
+#cadre_vertical{
+	position: absolute;
+	z-index: -100;
+
+	width: 98.5vw;
+	height: 100vh;
+
+	margin-left: 0.75vw;
+	margin-right: 0.75vw;
+
+	display: flex;
+	flex-direction: inline;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: Wingdings;
+	font-size: 2.5vh;
+}
+
+#accueil{
+	width: 100vw;
+    height: 100vh;
+
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+}
+
+#image_accueil{
+	height: 45vh;
+
+	margin-bottom: 2.5vh;
+}
+
+#boutons_accueil{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#boutons_accueil button{
+	width: 24vw;
+
+	margin-bottom: 2.5vh;
+}
+
+#boutons_accueil a{
+	text-decoration: none;
+}
+
+#bouton_accueil{
+	display: flex;
+	flex-direction: inline;
+	justify-content: space-between;
+}
+
+#contenu_infos{
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#image_infos{
+	height: 75vh;
+
+	margin-right: 2.5vw;
+}
+
+#side_infos{
+	height: 71vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: space-between;
+}
+
+#bouton_infos{
+	margin-bottom: 5vh;
+}
+
+#texte_infos{
+	font-family: Times New Roman;
+	font-size: 2.5vh;
+}
+
+#image_sup_infos{
+	height: 10vh;
+}
+
+#page_01, #page_02, #page_03, #page_04, #page_05,
+#page_06, #page_07, #page_08, #page_09, #page_10 {
+	width: 100vw;
+    height: 100vh;
+
+	justify-content: center;
+    align-items: center;  
+}
+
+
+.wingdings{
+	font-family: Wingdings;
+}
+
+.contenu_bd{
+	width: 87.5vw;
+	height: 87.5vh;
+
+	display: flex;
+	align-items: start;
+	justify-content: center;
+}
+
+.case{
+	width: 75vh;
+
+	margin-right: 2.5vw;
+}
+
+.image_case{
+	height: 75vh;
+
+	margin-bottom: 1vh;
+
+	border-radius: 1vh;
+}
+
+.texte_case{
+	font-family: Times New Roman;
+	font-size: 2.5vh;
+}
+
+.menu{
+	height: 76.5vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.menu_haut{
+
+}
+
+.boutons{
+	display: flex;
+	flex-direction: inline;
+
+	margin-bottom: 5vh;
+}
+
+.bouton_precedent{
+	margin-right: 1vw;
+}
+
+.bouton_suivant{
+
+}
+
+.texte_inventaire{
+	font-size: 2.5vh;
+}
+
+.image_profil{
+	height: 25vh;
+}
+
+.contenu_popup{
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.texte_popup{
+	width: 95vw;
+
+	margin: 2.5vh;
+
+	font-family: Times New Roman;
+}
+
+.image_popup{
+	height: 95vh;
+
+	margin: 2.5vh;
+}

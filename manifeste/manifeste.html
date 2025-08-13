@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<tile></tile>
+		<script type ="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+	</head>
+	<body>
+		<div id="webcam-container">
+			<video id="webCam"></video>
+		</div>
+		<section id="texte-container">
+			<p id="texte-partie1">
+			**********************************************************************
+			<br>
+			<br>
+			À l'origine de l'informatique, lorsque l'ordinateur est créé, sa complexité le rend inaccessible aux néophytes. Tout n'est que texte, zéro, un, et langage de programmation. Dans les années 80, les systèmes d'exploitation viennent donner une interface visuelle à cette mécanique complexe. Ainsi, les ordinateurs personnels deviennent plus abordables et accessibles, c'est alors le début d'une nouvelle ère pour le design graphique.
+			<br>
+			Il est intéressant de constater que le design de ces premières interfaces intègre systématiquement des représentations simplifiées d'éléments ou d'objets réels qui, pour certaines, persistent de nos jours. Ce principe, c'est le skeuomorphisme, qui est une part intégrante de ce processus de familiarisation de l'utilisateur : il répond à un apparent besoin de repères palpables dans le monde virtuel. Les dossiers sont représentés par des chemises en papier, tandis que le principe de sauvegarde est associé à un dessin de disquette, les éléments ont des ombres, des effets de lumière… On constate, paradoxalement, que le numérique, par définition immatériel, nouveau plan d'existance, tend à se substituer au réel ou à le recopier.
+			<br>
+			Également, Internet connecte désormais les gens à distance et est une toile vierge qui ne demande qu'à être nourrie de pages. Les utilisateurs en profitent pour s'exprimer à travers la mis en page de sites internet, qui est un concept neuf à l'époque. De nombreuses pages et blogs se créent et tentent, avec les fonctionnalités limitées de ce proto-webdesign, d'exprimer leur personnalité ou identité de marque de la manière la plus authentique que ce monde virtuel le permet.
+			<br>
+			<br>
+			**********************************************************************
+			</p>
+			<div id="milieu-container">
+				<div id="titre-container">
+					<h1 id="titre">Le rapport au <span>réel</span><br>dans le <span>virtuel</span>, analyse<br>du <span>design graphique<br>numérique</span> primitif.</h1>
+				</div>
+				<div id="nom-container">
+					<p id="nom">
+					<span>01001101 01100001 01101110 01101111 01101110 00100000 01001000 01101111 01100001 01110010 01100001 01110101 00100000 01000100 01010011 01000001 01000001 00110001</span>
+					</p>
+				</div>
+			</div>
+			<p id="texte-partie2">
+			*********************************************************************
+			<br>
+			<br>
+			Pour certains, cela passe par le caractère direct d'éléments bruts sur fond blanc, pour d'autres, c'est l'intégration du plus d'éléments colorés et mouvants possible, encore d'autres cherchent à imiter une texture papier et une écriture manuscrite. On identifie ici deux tendances sous-jacentes : vouloir s'éloigner de la réalité, créer de nouveaux codes propres à cette nouvelle ère, ou rester en sécurité avec ces repères de la vie de l'autre côté de l'écran.
+			<br>
+			La 3D, l'image de synthèse, prolongent cette idée de projection. L'on cherche à recréer, sur des bases réelles, un contexte familier, soit un décor ou des objets donnant l'illusion de profondeur, de largeur et de hauteur. Pourtant, avec le jeu vidéo, notamment, cette notion de réalité commence aussi à se brouiller. Ces nouveaux outils, qui servaient principalement à reproduire des choses connues, se débrident et deviennent petit à petit vecteurs d'abstraction et de déformation.
+			<br>
+			Les premiers logiciels de conception graphique voient le jour, ils automatisent, systématisent les méthodes manuelles, initialement contraignantes et laborieuses. Très vite, l'on commence à pouvoir manipuler les photographies de façon bien plus convaincante que le photo-montage papier ne le permettait. Le vrai et le faux se mélangent.
+			<br>
+			Cette ambivalence me fascine. Le design numérique serait-il une extension de la réalité ou un monde à part entière ?  Comment se positionner face au monde virtuel ? En faisons-nous partie ? Lequel de ces deux mondes est le vrai ? Et d'abord, qu'est-ce que le réel ?
+			<br>
+			<br>
+			*********************************************************************
+			</p>
+		</section>
+		<div id="smiley-container">
+			<p id="smiley">
+			<span>:-)</span>
+			</p>
+		</div>
+		<script>
+			const webCamElement=document.getElementById("webCam");
+			const canvasElement=document.getElementById("canvas");
+			const webcam=new Webcam(webCamElement, "user", canvasElement);
+			webcam.start();
+		</script>
+	</body>
+</html>

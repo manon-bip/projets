@@ -1,0 +1,176 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+
+body{
+	background-color:#0000FF;
+}
+
+video{
+	width:50vw;
+	height:50vh;}
+
+p{
+	font-family:terminal-grotesque;
+	font-style:normal;
+	color:lightblue;
+	}
+
+h1{
+	font-family:BianZhiDai;
+	font-style:comic;
+	color:lightblue;
+	text-align:center;
+}
+
+::selection{
+	background-color:#C4FFB2;
+	color:#0000FF;
+}
+
+@font-face{
+	font-family:'terminal-grotesque';
+	src:url(fonts/terminal-grotesque.ttf);
+	font-style:normal;
+}
+
+@font-face{
+	font-family:'BianZhiDai';
+	src:url(fonts/BianZhiDai-comic.otf);
+	font-style:comic;
+}
+
+@keyframes scroll-up{
+	from{
+		transform:translateY(100vh);
+		}
+	to{
+		transform:translateY(-100vh);
+		}
+}
+
+@keyframes scroll-down{
+	from{
+		transform:translateY(-100vh);
+		}
+	to{
+		transform:translateY(100vh);
+		}
+}
+
+#webcam-container{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:absolute;
+	z-index:-1;
+}
+
+#webCam{
+	width:50vw;
+	height:50vh;
+}
+
+#texte-container{
+	width:100vw;
+	height:100vh;
+	padding:0 2.5vw;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	position:absolute;
+}
+
+#texte-partie1, #texte-partie2{
+	height:100vh;
+	font-size:1.55vw;
+	overflow:visible;
+	//*background-color:white;*//
+}
+
+#texte-partie1{
+	width:32vw;
+	animation:20s scroll-up infinite linear;
+}
+
+#texte-partie2{
+	width:32vw;
+	animation:20s scroll-down infinite linear;
+}
+
+#texte-partie1:hover{
+	animation-play-state:paused;
+}
+
+#texte-partie2:hover{
+	animation-play-state:paused;
+}
+
+#milieu-container{
+	width:25vw;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-between;
+}
+
+#titre-container{
+	height:25vh;
+	display:flex;
+	align-items:center;
+}
+
+#titre{
+	font-size:1.8vw;
+}
+
+#titre:hover span{
+	color:#0000FF;
+	background-color:;
+
+}
+
+#nom-container{
+	height:25vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+#nom{
+	text-align:center;
+}
+
+#nom:hover span{
+	display:none;
+}
+
+#nom:hover:before{
+  content:"Manon Hoarau DSAA1";
+}
+
+#smiley-container{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#smiley{
+	font-size:10vw;
+	z-index:1;
+}
+
+#smiley:hover span{
+	display:none;
+}
+
+#smiley:hover:before{
+  content:";-D";
+}
