@@ -1,0 +1,179 @@
+/* -------------------------------------------------- */
+/* FONTS & VARIABLES */
+/* -------------------------------------------------- */
+
+@font-face {
+    font-family: "SpaceMono";
+    src: url(fonts/SpaceMono-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Bianzhidai";
+    src: url(fonts/bianzhidai_COLR-back.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Bianzhidai-Ring";
+    src: url(fonts/bianzhidai-Ring.otf) format("truetype");
+}
+
+:root {
+    --color: #aa7dda;
+    --accent-color: #f4ffc3;
+    --font-family: "Bianzhidai";
+}
+
+/* -------------------------------------------------- */
+/* BODY */
+/* -------------------------------------------------- */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    color: var(--color);
+    background-color: #7734e3;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------- */
+/* TITRES & PARAGRAPHES */
+/* -------------------------------------------------- */
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Bianzhidai-Ring";
+    font-weight: normal;
+    font-size: 7vw;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size:3.5vw;
+    text-align: center;
+}
+
+/* -------------------------------------------------- */
+/* BALISES */
+/* -------------------------------------------------- */
+
+input[type="text"] {
+    width: 80vw;
+    height: 2.5vw;
+    margin: 0;
+    padding: 0.5vw;
+    font-family: "Bianzhidai";
+    font-size: 2.5vw;
+    border: 0.2vw solid var(--color);
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+input, select, textarea {
+    color: var(--color);
+}
+
+label {
+    font-size: 2.5vw;
+}
+
+button {
+    margin: 0;
+    font-family: "Bianzhidai";
+    font-size: 1.5vw;
+    color: var(--color);
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.2vw solid var(--color);
+    cursor: pointer;
+}
+
+button:hover{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.cadeau{
+    margin-top:-6.5vw;
+    font-family: "Spacemono";
+    font-weight: bold;
+    font-size:0.3vw;
+    color: var(--accent-color);
+} 
+
+/* -------------------------------------------------- */
+/* CONTENEUR PRINCIPAL */
+/* -------------------------------------------------- */
+
+.container {
+    height: 65vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.container-cadeau{
+    display:flex;
+    flex-direction:row;
+    gap:3.5vw;
+}
+
+/* -------------------------------------------------- */
+/* MESSAGE D'ERREUR */
+/* -------------------------------------------------- */
+
+.message-erreur {
+    font-size: 2vw;
+}
+
+/* -------------------------------------------------- */
+/* ELEMENTS ALEATOIRES */
+/* -------------------------------------------------- */
+
+.random-element {
+    position: absolute;
+    z-index: 9999;
+    font-family: "SpaceMono";
+    font-size: 2.5vw;
+    color: var(--accent-color);
+}
+
+/* -------------------------------------------------- */
+/* PAGE DE COMPTE RENDU */
+/* -------------------------------------------------- */
+
+.container-compte-rendu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligner les éléments à gauche */
+    justify-content: center;
+    text-align: left; /* Aligner le texte à gauche */
+    width: 80vw; /* Ajuster la largeur pour mieux centrer le conteneur */
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+.hidden {
+    display: none;
+}
+
+.avion{
+	width:65vw;
+	font-size: 2.5vw;
+}
+
+

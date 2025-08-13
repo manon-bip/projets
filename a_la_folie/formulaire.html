@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vous avez gagné !</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Conteneur principal du formulaire -->
+    <div class="container">
+        <h1>** FORMULAIRE **</h1>
+        <div id="question-container">
+            <!-- La question actuelle sera affichée ici -->
+        </div>
+        <div id="response-container">
+            <!-- Le champ pour entrer la réponse sera ici -->
+        </div>
+        <button id="submit-button">SOUMETTRE</button>
+        <p id="message-erreur" class="message-erreur"></p>
+    </div>
+
+    <!-- Conteneur pour les éléments aléatoires (images, ASCII) -->
+    <div id="random-elements"></div>
+
+    <!-- Conteneur pour l'indication d'impression -->
+    <div class="print-message" style="display: none;">       
+        <p class="avion">
+        Pour nous envoyer votre formulaire et ainsi récupérer votre prix, faites un avion en papier avec cette feuille et lancez-la, vous recevrez votre cadeau sous 5 jours ouvrés.*
+        Comment faire un avion en papier : <a href="https://www.youtube.com/watch?v=-wL3wEKc6sg">cliquez ici</a>
+        </p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
